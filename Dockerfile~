@@ -1,0 +1,8 @@
+#first put the base alpine image
+FROM alpine
+
+#now additional steps to configure
+RUN npm install
+
+#now the default start command to be configured
+CMD ["npm" ,"start"]

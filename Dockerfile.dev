@@ -1,0 +1,11 @@
+#first put the base alpine image
+FROM node:alpine
+# configure workingdir
+WORKDIR '/app'
+#now additional steps to configure
+COPY package.json .
+RUN npm install
+#COPY . .
+
+#now the default start command to be configured
+CMD ["npm" ,"start"]
