@@ -4,9 +4,9 @@ services:
  - docker
 
 before_install:
- - docker build -t CIBUILD -f Dockerfile.dev
+ - docker build -t cibuild -f Dockerfile.dev
 
 script:
- - docker run CIBUILD npm run test -- --coverage
+ - docker run cibuild npm run test -- --coverage
 
 
