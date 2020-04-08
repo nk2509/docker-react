@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -30,5 +31,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "dependencies" : {
+    "express" : "*"
+  },
+  "scripts" :{
+  "start" : "node index.js"
+>>>>>>> 5ab8675bc474610ec47ba548a62b68151f03b3ed
   }
 }
