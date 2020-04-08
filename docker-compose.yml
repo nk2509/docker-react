@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 version: '3'
 
 services: 
@@ -14,16 +13,3 @@ services:
    context: . 
    dockerfile: Dockerfile.dev
   command: ["npm", "run", "test"] 
-=======
-#compose file
-version: '3'
-services:
-        web:
-            build:
-                  context: .
-                  dockerfile: Dockerfile.dev
-            ports:
-                    - "8080:8080"
-            volumes:
-                    - ./index.js:/app/index.js
->>>>>>> 5ab8675bc474610ec47ba548a62b68151f03b3ed
